@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap');
+
+body, html {
+    margin: 0;
+    /* width: 100vw; */
+    
+    background: #17141C;
+    background: linear-gradient(180deg,rgba(30, 13, 41, 1) 17%, rgba(66, 19, 97, 1) 49%, rgba(66, 19, 97, 1) 57%, rgba(30, 13, 41, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* se quiser que o fundo fique fixo */
+    background-size: cover; /* ajusta o tamanho para cobrir */
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    /* background-color: rebeccapurple; */
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 100px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.logoHeader{
+    margin-left: 30px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Jersey 15';
+    cursor: pointer;
+}
+
+.rightBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soundButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #4e0e79;
+    border: none;
+    border-radius: 7px;
+    /* border-right: 3px solid #B348E4;
+    border-bottom: 3px solid #B348E4; */
+    /* box-shadow: 
+    inset 3px 0 20px -5px #b348e46c, 
+    inset 0 3px 20px -5px #b348e46c;    */
+
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.soundButton:hover{
+    background-color: #4e0e79;
+}
+
+.iconSoundButton{
+    width: 25px;
+    height: 25px;
+}
+
+.searchHeader{
+    outline: none;
+    border: none;
+    height: 45px;
+    margin-right: 30px;
+    width: 320px;
+    border-radius: 8px;
+    background-color: #6f20a3;
+    font-family: 'Jersey 15';
+    color: #d6cbe0;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.searchHeader::placeholder{
+    color: #9E84B4;
+    font-size: 26px;
+    font-family: 'Jersey 15';
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 800px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px -5px 20px #b348e4d7;
+}
+
+
+
+
+.groupsBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #9E84B4; */
+}
+
+.group1GameContainer{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.likeButton{
+    margin-top: 40px;
+    width: 40px;
+    opacity: 40%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.deslikeButton{
+    transform: rotate(180deg);
+    width: 40px;
+    opacity: 40%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.likeButton:hover{
+    opacity: 100%;
+}
+.deslikeButton:hover{
+    opacity: 100%;
+}
+
+.rates{
+    font-family: 'Jersey 10';
+    color: white;
+    font-size: 30px;
+}
+
+.group2GameContainer{
+    position: relative;
+    width: 1200px;
+    
+    height: 650px;
+    background-color: rgb(0, 0, 0); 
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+}
+
+.headContainerJogo {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.backButton:hover {
+    background-color: #2e2936;
+}
+
+.imgButtonBack{
+    width: 40px;
+}
+
+.gameName{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+    font-family: 'Jersey 15';
+    /* background-color: red; */
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+}
+
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 80px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.textFooter{
+    color: #DEC5F2;
+    font-size: 28px;
+    font-family: 'Jersey 15';
+}
+
+#jogo{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+#resultado{
+margin-right: 70px;
+    float: left;
+    /* background-color: #1E62D0; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resposta{
+
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    font-style: italic  ;
+    font-family: 'Jersey 15';
+    color: #ffd000;
+}
+
+.linha{
+    display: flex;
+    width: 600px;
+    height: 180px;
+    margin-bottom: 6px;
+}
+
+.casa{
+    width: 200px;
+    height: 100%;
+    border: solid 6px rgb(3, 11, 129);
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -6px;
+
+}
+
+#casa0{
+    border-top-left-radius:20px ;
+
+}
+
+#casa2{
+    border-top-right-radius:20px ;
+
+}
+
+#casa6{
+    border-bottom-left-radius:20px ;
+
+}
+
+#casa8{
+    border-bottom-right-radius:20px ;
+
+}
+
+.imgResultados{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.imgResultados2{
+    width: 25px;
+    margin-left: 10px;
+}
+.xis{
+    display: flex;
+    align-items: center;
+    font-family: 'jersey 15';
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+.bola{
+    display: flex;
+    align-items: center;
+    font-family: 'jersey 15';
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+.velha{
+    align-items: center;
+    font-family: 'jersey 15';
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+.vezJogador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'jersey 15';
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+    
+}
+
+.imgJogador{
+    width: 140px;
+    height: 140px;
+
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #ffd000;
+    margin-top: 20px;
+    width: 250px;
+    height: 60px;
+    border: none;
+    border-bottom: 7px solid #b09000;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: 'Jersey 15';
+    font-size: 30px;
+}
+
+input[type=button]:hover {
+    background-color: #ba9800;
+    border-bottom: 7px solid #745f00;
+
+    text-decoration: none;
+}
+
+
+.animationJogo{
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.986);
+    z-index: 2;
+}
+
+.fundoAnimation{
+    max-width: 1200px;
+    position: relative;
+    background-image: url(../assets/mapa-pac.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 120%;
+    background-position: -40%;
+}
+
+.pacmanAnimation{
+    margin-top: 260px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    transition: 7s ;
+}
+
+.ghostAnimation{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-top: 560px;
+    margin-left: 565px; 
+    transition: 6s;
+}
+
+.pointsAnimation{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 565px;
+    text-align: center;
+    color: rgb(0, 225, 255);
+    font-family: monospace;
+    font-size: 20px;
+    z-index: 3;
+
+}

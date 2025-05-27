@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bungee&family=Jersey+10&family=Jersey+15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'SuperMario';
+  src: url('../assets/fonts/SuperMario256.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    /* width: 100vw; */
+    
+    background: #17141C;
+    background: linear-gradient(180deg,rgba(30, 13, 41, 1) 17%, rgba(66, 19, 97, 1) 49%, rgba(66, 19, 97, 1) 57%, rgba(30, 13, 41, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* se quiser que o fundo fique fixo */
+    background-size: cover; /* ajusta o tamanho para cobrir */
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    /* background-color: rebeccapurple; */
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 100px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.logoHeader{
+    margin-left: 30px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Jersey 15';
+    cursor: pointer;
+}
+
+.rightBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soundButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #413A4D;
+    border: none;
+    border-radius: 7px;
+    /* border-right: 3px solid #B348E4;
+    border-bottom: 3px solid #B348E4; */
+    /* box-shadow: 
+    inset 3px 0 20px -5px #b348e46c, 
+    inset 0 3px 20px -5px #b348e46c;    */
+
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.soundButton:hover{
+    background-color: #403a49;
+}
+
+.iconSoundButton{
+    width: 25px;
+    height: 25px;
+}
+
+.searchHeader{
+    outline: none;
+    border: none;
+    height: 45px;
+    margin-right: 30px;
+    width: 320px;
+    border-radius: 8px;
+    background-color: #6f20a3;
+    font-family: 'Jersey 15';
+    color: #d6cbe0;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.searchHeader::placeholder{
+    color: #9E84B4;
+    font-size: 26px;
+    font-family: 'Jersey 15';
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 800px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px -5px 20px #b348e4d7;
+}
+
+
+
+
+.groupsBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #9E84B4; */
+}
+
+.group1GameContainer{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.likeButton{
+    margin-top: 40px;
+    width: 40px;
+    opacity: 40%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.deslikeButton{
+    transform: rotate(180deg);
+    width: 40px;
+    opacity: 40%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.likeButton:hover{
+    opacity: 100%;
+}
+.deslikeButton:hover{
+    opacity: 100%;
+}
+
+.rates{
+    font-family: 'Jersey 10';
+    color: white;
+    font-size: 30px;
+}
+
+.group2GameContainer{
+    width: 1200px;
+    max-width: 1200px;
+    height: 650px;
+    background-color: rgb(148, 174, 193); 
+    margin-top: -20px;
+}
+
+.headContainerJogo {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.backButton:hover {
+    background-color: #2e2936;
+}
+
+.imgButtonBack{
+    width: 40px;
+}
+
+.gameName{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+    font-family: 'Jersey 15';
+    /* background-color: red; */
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+}
+
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 80px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.textFooter{
+    color: #DEC5F2;
+    font-size: 28px;
+    font-family: 'Jersey 15';
+}
+
+#jogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/backgroundMario.jpg);
+    background-size: 100% 100%;
+}
+
+#tabelaDiv{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#forca img{
+    width: 300px;
+}
+
+#tabAcerto{
+    font-family: "Baloo 2";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 90px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #17141C;
+    border-bottom: 5px solid #b6b6b6;
+    border-right: 5px solid #b6b6b6;
+    user-select: none;
+}
+
+#acertos{
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.palavrasCertas{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    margin-right: 50px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+}
+
+#tema{
+    color: rgb(255, 255, 255);
+    font-family: "SuperMario";
+    /* -webkit-text-stroke: 3px  rgb(0, 0, 0); */
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-shadow: 4px 0px 0px rgb(43, 43, 43);
+}
+
+#letras{
+    gap: 5px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#letra1,#letra2,#letra3{
+    display: flex;
+    gap: 5px;
+}
+
+.tecla{
+width: 40px;
+height: 40px;
+font-family: "Baloo 2";
+font-weight: 700;
+background-color: rgb(248, 48, 48);
+color: white;
+border: none;
+font-size: 20px;
+border-radius: 5px;
+cursor: pointer;
+border-bottom: 3px solid rgb(139, 12, 12);
+border-right: 3px solid rgb(139, 12, 12);
+transition: 0.3s;
+}
+
+.tecla:hover{
+    background-color: rgb(199, 35, 35);
+    transform: translateY(-3px);
+}
+
+.tecla:disabled{
+    opacity: 40%;
+}
+
+.tecla:disabled:hover{
+    transform: translateY(0px);
+}
+
+#tenta{
+    display: flex;
+    gap: 5px;
+}
+
+#tenta input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-family: "Baloo 2";
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    font-size: 22px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+}

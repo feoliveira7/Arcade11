@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade11</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="assets/logo1.png">
+</head>
+<body>
+
+    <!-- <audio id="bg-music" autoplay loop>
+        <source src="assets/songs/WhatsApp Audio 2025-04-21 at 18.05.02.mpeg" type="audio/mpeg">
+        
+    </audio> -->
+
+    <header>
+
+        <div class="containerHeader">
+
+            <p class="logoHeader">Arcade11</p>
+            
+            <div class="rightBox">
+                <!-- <button class="soundButton" onclick="switchSound()"><img id="iconSoundButton" class="iconSoundButton" src="assets/soundUp.png" alt=""></button> -->
+                <input type="text" class="searchHeader" placeholder="Pesquisar um jogo">
+            </div>
+            
+
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <div class="containerMain">
+
+
+            <div class="categoriesBox">
+                <div class="categoria1">
+                    <p class="nameCategoria1">Todos os jogos</p>
+                </div>
+
+                <div class="categoria2">
+                    <p class="nameCategoria2">Arcade / Fliperama</p>
+                </div>
+
+                <div class="categoria2">
+                    <p class="nameCategoria2">Puzzles</p>
+                </div>
+
+                <div class="categoria2">
+                    <p class="nameCategoria2">Atari</p>
+                </div>
+
+                <div class="categoria2">
+                    <p class="nameCategoria2">Nintendo</p>
+                </div>
+            </div>
+
+            <div class="gamesContainer">
+
+                <div class="categoria1Mobile">
+                    <p class="nameCategoria1Mobile">Todos os jogos</p>
+                </div>
+
+
+                    <div class="gameCard1" onclick="location.href='game1.html'" onmouseenter="PlayCard1()" onmouseleave="removePlayCard1()">
+                        <!-- <img class="gameIcon" src="assets/capagame3.png" alt=""> -->
+                        <div class="fundoCard1" id="fundoCard1"></div>
+                        <p class="gameName">Troca Palavras</p>
+                    </div>
+    
+                    <div class="gameCard2" onclick="location.href='game2.html'" onmouseenter="PlayCard2()" onmouseleave="removePlayCard2()">
+                        <!-- <img class="gameIcon" src="assets/capagame2.png" alt=""> -->
+                        <div class="fundoCard2" id="fundoCard2"></div>
+                        <p class="gameName">Jogo da Velha</p>
+                    </div>
+
+                
+
+                    <div class="gameCard3" id="line2card" onclick="location.href='game3.html'" onmouseenter="PlayCard3()" onmouseleave="removePlayCard3()">
+                        <!-- <img class="gameIcon" src="assets/capagame1.png" alt=""> -->
+                        <div class="fundoCard3" id="fundoCard3"></div>
+                        <p class="gameName">Jogo da Forca</p>
+                    </div>
+    
+                    <div class="gameCard4" id="line2card" onclick="location.href='game4.html'" onmouseenter="PlayCard4()" onmouseleave="removePlayCard4()">
+                        <!-- <img class="gameIcon" src="assets/capagame4.png" alt=""> -->
+                        <div class="fundoCard4" id="fundoCard4"></div>
+                        <p class="gameName">Sonic: Pixel Run</p>
+                    </div>
+      
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+
+        <div class="containerFooter">
+
+            <p class="textFooter">© 2025 Arcade11. Todos os direitos reservados.</p>
+            
+
+        </div>
+
+    </footer>
+    <script src="scripts/home.js"></script>
+</body>
+</html>

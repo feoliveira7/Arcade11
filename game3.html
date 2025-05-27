@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="icon" href="assets/logo1.png">
+    <link rel="stylesheet" href="styles/game3.css">
+</head>
+<body onload="prepararRodada()">
+
+    <header>
+
+        <div class="containerHeader">
+
+            <p class="logoHeader">Arcade11</p>
+            
+            <div class="rightBox">
+                <!-- <button class="soundButton" onclick="switchSound()"><img id="iconSoundButton" class="iconSoundButton" src="assets/soundUp.png" alt=""></button> -->
+                <input type="text" class="searchHeader" placeholder="Pesquisar um jogo">
+            </div>
+            
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="containerMain">
+
+            <div class="gameContainer">
+
+                <div class="headContainerJogo">
+                    <button class="backButton" onclick="location.href='index.html'"><img class="imgButtonBack" src="assets/returnIcon.png" alt=""></button>
+                    <p class="gameName">Jogo da Forca</p>
+                </div>
+
+
+                <div class="groupsBox">
+                    <div class="group1GameContainer">
+
+                        <img src="assets/like.png" class="likeButton" alt="">
+                        <p class="rates">( 2.8k )</p>
+                        <img src="assets/like.png" class="deslikeButton" alt="">
+
+                    </div>
+
+                    <div class="group2GameContainer">
+                        
+                        <div id="jogo">
+                            <div id="tabelaDiv">
+
+                                <div class="row">
+                                    <div class="column" id="tabAcerto">
+                                        <div id="acertos">ACERTOS: 0</div>
+                                        <div id="palavrasCertas">Vitórias: 0 <br> Derrotas: 0</div>
+                                    </div>
+                                    <div class="column">
+                                        <div id="forca" class="anima">
+                                            <img src="assets/forca1.png" id="imagem">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+
+
+                                <div class="row2">
+                                    <div class="column">
+                                        <br>
+                                        <div id="tema"> TEMA: FRUTA</div>
+                                        <br>
+                                    </div>
+                                    <div class="column">
+                                        <div id="tentativa">
+                                            <form id="tenta"></form>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div id="letras">
+                                            <input type="text" id="letraClicada" disabled style="display: none;">
+                                            <div id="letra1"></div>
+                                            <div id="letra2"></div>
+                                            <div id="letra3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="group1GameContainer">
+
+                    </div>
+
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    <footer>
+
+
+        <div class="containerFooter">
+
+            <p class="textFooter">© 2025 Arcade11. Todos os direitos reservados.</p>
+            
+
+        </div>
+
+    </footer>
+    <script src="scripts/game3.js"></script>
+</body>
+</html>

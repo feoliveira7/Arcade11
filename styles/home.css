@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap');
+
+body, html {
+    margin: 0;
+    /* width: 100vw; */
+    
+    background: #17141C;
+   background: linear-gradient(180deg,rgba(30, 13, 41, 1) 17%, rgba(66, 19, 97, 1) 49%, rgba(66, 19, 97, 1) 57%, rgba(30, 13, 41, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* se quiser que o fundo fique fixo */
+    background-size: cover; /* ajusta o tamanho para cobrir */
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    /* background-color: rebeccapurple; */
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 100px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.logoHeader{
+    margin-left: 30px;
+    color: #ffffffd7;
+    font-size: 50px;
+    font-family: 'Jersey 15';
+    cursor: pointer;
+}
+
+.rightBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soundButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #6f20a3;
+    border: none;
+    border-radius: 7px;
+    /* border-right: 3px solid #B348E4;
+    border-bottom: 3px solid #B348E4; */
+    /* box-shadow: 
+    inset 3px 0 20px -5px #b348e46c, 
+    inset 0 3px 20px -5px #b348e46c;    */
+
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.soundButton:hover{
+    background-color: #2d0946;
+}
+
+.iconSoundButton{
+    width: 25px;
+    height: 25px;
+
+}
+
+.searchHeader{
+    outline: none;
+    border: none;
+    height: 45px;
+    margin-right: 30px;
+    width: 320px;
+    border-radius: 8px;
+    background-color: #6f20a3;
+    font-family: 'Jersey 15';
+    color: #d6cbe0;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.searchHeader::placeholder{
+    color: #9E84B4;
+    font-size: 26px;
+    font-family: 'Jersey 15';
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoriesBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    gap: 15px;
+    width: 98%;
+    height: 45px;
+    /* background-color: #202020; */
+}
+
+.categoria1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    background-color: #4e0e79;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    box-shadow: inset 0px 7px 10px #b348e4d7;
+    cursor: pointer;
+}
+
+.nameCategoria1{
+    color: white;
+    font-size: 25px;
+    font-family: 'Jersey 15';
+}
+
+.categoria1Mobile{
+    display: none;
+}
+
+.nameCategoria1Mobile{
+    display: none;
+}
+
+.categoria2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 230px;
+    height: 100%;
+    background-color: #361b47;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    box-shadow: inset 0px 5px 10px #b348e4d7;
+    cursor: pointer;
+}
+
+.nameCategoria2{
+    margin-left: 15px;
+    color: #a8a8a8;
+    font-size: 25px;
+    font-family: 'Jersey 15';
+}
+
+.categoria2:hover{
+    background-color: #46245c;
+}
+
+.gamesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    flex-wrap: wrap;
+    width: 98%;
+    height: 900px;
+    gap: 40px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px -5px 20px #b348e4d7;
+}
+
+#line2card{
+    margin-top: -180px;
+}
+
+.gameCard1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background-color: #522172;
+    border-radius: 10px;
+    border-right: 7px solid #B348E4;
+    border-bottom: 7px solid #B348E4;
+    box-shadow: 
+    inset 3px 0 20px -3px #b348e46c,   /* esquerda */
+    inset 0 3px 20px -3px #b348e46c;   /* topo */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url(../assets/capagame1.png);
+    background-size: cover;
+
+}
+
+
+.gameCard1:hover{
+    scale: 1.05;
+    box-shadow: 
+    inset 3px 0 20px -3px #b348e4,   /* esquerda */
+    inset 0 3px 20px -3px #b348e4;   /* topo */
+}
+
+.gameCard2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    width: 600px;
+    height: 350px;
+    background-color: #522172;
+    border-radius: 10px;
+    border-right: 7px solid #B348E4;
+    border-bottom: 7px solid #B348E4;
+    box-shadow: 
+    inset 3px 0 20px -3px #b348e46c,   /* esquerda */
+    inset 0 3px 20px -3px #b348e46c;   /* topo */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url(../assets/capagame2.png);
+    background-size: cover;
+
+}
+
+
+.gameCard2:hover{
+    scale: 1.05;
+    box-shadow: 
+    inset 3px 0 20px -3px #b348e4,   /* esquerda */
+    inset 0 3px 20px -3px #b348e4;   /* topo */
+}
+
+.gameCard3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    width: 600px;
+    height: 350px;
+    background-color: #522172;
+    border-radius: 10px;
+    border-right: 7px solid #B348E4;
+    border-bottom: 7px solid #B348E4;
+    box-shadow: 
+    inset 3px 0 20px -3px #b348e46c,   /* esquerda */
+    inset 0 3px 20px -3px #b348e46c;   /* topo */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url(../assets/capagame3.png);
+    background-size: cover;
+
+}
+
+
+.gameCard3:hover{
+    scale: 1.05;
+    box-shadow: 
+    inset 3px 0 20px -3px #b348e4,   /* esquerda */
+    inset 0 3px 20px -3px #b348e4;   /* topo */
+}
+
+.gameCard4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    width: 600px;
+    height: 350px;
+    background-color: #522172;
+    border-radius: 10px;
+    border-right: 7px solid #B348E4;
+    border-bottom: 7px solid #B348E4;
+    box-shadow: 
+    inset 3px 0 20px -3px #b348e46c,   /* esquerda */
+    inset 0 3px 20px -3px #b348e46c;   /* topo */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url(../assets/capagame4.png);
+    background-size: cover;
+
+}
+
+
+.gameCard4:hover{
+    scale: 1.05;
+    box-shadow: 
+    inset 3px 0 20px -3px #b348e4,   /* esquerda */
+    inset 0 3px 20px -3px #b348e4;   /* topo */
+}
+
+.gameIcon{
+    margin-top: 20px;
+    width: 560px;
+}
+
+.gameName{
+    position: absolute;
+    bottom: -20px;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Jersey 15';
+    font-size: 40px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
+
+.fundoCard1{
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../assets/Jogar.png);
+    background-size: cover;
+    background-position: 50%;
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+.fundoCard2{
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../assets/Jogar.png);
+    background-size: cover;
+    background-position: 50%;
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+.fundoCard3{
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../assets/Jogar.png);
+    background-size: cover;
+    background-position: 50%;
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+.fundoCard4{
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../assets/Jogar.png);
+    background-size: cover;
+    background-position: 50%;
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+}
+
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 80px;
+    background-color: #4e0e79;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.textFooter{
+    color: #DEC5F2;
+    font-size: 28px;
+    font-family: 'Jersey 15';
+}
+
+
+@media (max-width: 768px) {
+
+.searchHeader{
+    display: none;
+}
+
+.soundButton{
+    display: none;
+}
+
+.categoriesBox{
+    display: none;
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: 100%;
+    height: 100px;
+    background-color: #4e0e79;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.gamesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    width: 100%;
+    height: 1300px;
+    gap: 10px;
+    background-color: #4e0e79;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    box-shadow: inset 0px -5px 20px #b348e4d7;
+}
+
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    width: 100%;
+    height: 80px;
+    background-color: #6f20a3;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.textFooter{
+    color: #DEC5F2;
+    font-size: 21px;
+    font-family: 'Jersey 15';
+}
+
+.categoria1Mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    background-color: #6f20a3;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px #d57bffd7;
+    cursor: pointer;
+}
+
+.nameCategoria1Mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Jersey 15';
+}
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic: Pixel Run</title>
+    <link rel="icon" href="assets/logo1.png">
+    <link rel="stylesheet" href="styles/game4.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="containerHeader">
+
+            <p class="logoHeader">Arcade11</p>
+            
+            <div class="rightBox">
+                <!-- <button class="soundButton" onclick="switchSound()"><img id="iconSoundButton" class="iconSoundButton" src="assets/soundUp.png" alt=""></button> -->
+                <input type="text" class="searchHeader" placeholder="Pesquisar um jogo">
+            </div>
+            
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="containerMain">
+
+            <div class="gameContainer">
+
+                <div class="headContainerJogo">
+                    <button class="backButton" onclick="location.href='index.html'"><img class="imgButtonBack" src="assets/returnIcon.png" alt=""></button>
+                    <p class="gameName">Sonic: Pixel Run</p>
+                </div>
+
+
+                <div class="groupsBox">
+                    <div class="group1GameContainer">
+
+                        <img src="assets/like.png" class="likeButton" alt="">
+                        <p class="rates">( 2.8k )</p>
+                        <img src="assets/like.png" class="deslikeButton" alt="">
+
+                    </div>
+
+                    <div class="group2GameContainer">
+                            <div class="game-board">
+
+                                <div class="score"><p id="pontuacao">PONTUAÇÃO: 0</p></div>
+                                <div class="ringsDisplay"><img src="assets/ringSonic.gif" class="ringDisplay" alt=""><p id="ringsShow">0</p></div>
+
+                                <img src="assets/motobug.png" class="pipe">
+                                <img src="assets/ringSonic.gif" class="ring">
+                                <img src="assets/sonicPersonagem.gif" id="personagemPrincipal" class="mario">
+                                <img src="assets/birds.gif" class="birds">
+
+                                <div class="startScreen" id="startScreen">
+                                    <h1 class="title1SC">SONIC:</h1>
+                                    <h1 class="title2SC">PIXEL RUN</h1>
+
+                                    <button class="startBtnSC" onclick="startGame()">JOGAR</button>
+                                </div>
+
+                                <div class="gameoverContainer" id="gameoverContainer">
+                                    <img src="assets/dead sonic.png" class="sonicGameover" alt="">
+                                    <h1 class="gameoverTitle">FIM DE JOGO!</h1>
+                                    <p class="goScore" id="goScore">PONTUAÇÃO: 0</p>
+                                    <p class="goRings" id="goRings">ANÉIS OBTIDOS: +0</p>
+
+                                    <button class="goButton1" onclick="playAgain()"><p>JOGAR NOVAMENTE</p></button>
+                                    <button class="goButton1" onclick="openShop()"><p>LOJA</p></button>
+                                </div>
+
+                                <div class="lojaContainer" id="lojaContainer">
+                                    <h1 class="shopTitle">LOJA</h1>
+                                    <div class="ringsDisplayShop"><img src="assets/ringSonic.gif" class="ringDisplay" alt=""><p id="ringsShop">0</p></div>
+
+                                    <div class="containerPersonagens">
+                                        <div class="cardPersonagem">
+                                            <p class="nomeCard">SONIC</p>
+                                            <img class="capaCard" src="assets/sonicCapa.png" alt="">
+                                            <button onclick="buyPersonagem(1)" class="buyCardBtn" id="buttonShop1">EQUIPADO</button>
+                                        </div>
+
+                                        <div class="cardPersonagem">
+                                            <p class="nomeCard">TAILS</p>
+                                            <img class="capaCard" src="assets/tailsCapa.png" alt="">
+                                            <button onclick="buyPersonagem(2)" class="buyCardBtn" id="buttonShop2">100</button>
+                                        </div>
+
+                                        <div class="cardPersonagem">
+                                            <p class="nomeCard">KNUCKLES</p>
+                                            <img class="capaCard" src="assets/knucklesCapa.png" alt="">
+                                            <button onclick="buyPersonagem(3)" class="buyCardBtn" id="buttonShop3">140</button>
+                                        </div>
+
+                                        <div class="cardPersonagem">
+                                            <p class="nomeCard">MIGHTY</p>
+                                            <img class="capaCard" src="assets/mightyCapa.png" alt="">
+                                            <button onclick="buyPersonagem(4)" class="buyCardBtn" id="buttonShop4">170</button>
+                                        </div>
+
+                                        <div class="cardPersonagem">
+                                            <p class="nomeCard">METAL SONIC</p>
+                                            <img class="capaCard" src="assets/metalSonicCapa.png" alt="">
+                                            <button onclick="buyPersonagem(5)" class="buyCardBtn" id="buttonShop5">200</button>
+                                        </div>
+
+                                        <div class="cardPersonagemlast">
+                                            <p class="nomeCard">SUPERSONIC</p>
+                                            <img class="capaCard" src="assets/superSonicCapa.png" alt="">
+                                            <button onclick="buyPersonagem(6)" class="buyCardBtn" id="buttonShop6">250</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="footerLoja">
+                                        <button class="shopButton1" onclick="returnShop()"><p>VOLTAR</p></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+
+                    <div class="group1GameContainer">
+
+                    </div>
+
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    <footer>
+
+
+        <div class="containerFooter">
+
+            <p class="textFooter">© 2025 Arcade11. Todos os direitos reservados.</p>
+            
+
+        </div>
+
+    </footer>
+    <script src="scripts/game4.js"></script>
+    <script src="scripts/game4shop.js"></script>
+</body>
+</html>

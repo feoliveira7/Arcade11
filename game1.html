@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de palavras</title>
+    <link rel="icon" href="assets/logo1.png">
+    <link rel="stylesheet" href="styles/game1.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="containerHeader">
+
+            <p class="logoHeader">Arcade11</p>
+            
+            <div class="rightBox">
+                <!-- <button class="soundButton" onclick="switchSound()"><img id="iconSoundButton" class="iconSoundButton" src="assets/soundUp.png" alt=""></button> -->
+                <input type="text" class="searchHeader" placeholder="Pesquisar um jogo">
+            </div>
+            
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="containerMain">
+
+            <div class="gameContainer">
+
+                <div class="headContainerJogo">
+                    <button class="backButton" onclick="location.href='index.html'"><img class="imgButtonBack" src="assets/returnIcon.png" alt=""></button>
+                    <p class="gameName">Troca de Palavras</p>
+                </div>
+
+
+                <div class="groupsBox">
+                    <div class="group1GameContainer">
+
+                        <img src="assets/like.png" class="likeButton" alt="">
+                        <p class="rates">( 2.8k )</p>
+                        <img src="assets/like.png" class="deslikeButton" alt="">
+
+                    </div>
+
+                    <div class="group2GameContainer">
+
+                        <div class="gamePalavras">
+
+                            <div class="caixa1">
+                                <p class="frase">O astronauta consertou o <span id='trocarFrase1'>satélite</span> no espaço.</p>
+                                <p class="frase">O chef preparou um <span id='trocarFrase2'> banquete</span> delicioso para os convidados.</p>
+                                <p class="frase">O detetive encontrou <span id='trocarFrase3'>pistas</span> importantes na cena do crime.</p>
+                                <p class="frase">O dragão voava sobre as <span id='trocarFrase4'>montanhas</span> cobertas de neve.</p>
+                                <p class="frase">O surfista enfrentou <span id='trocarFrase5'> ondas</span> gigantes na praia deserta.</p>
+                                <p class="frase">A princesa escondeu o <span id='trocarFrase6'>mapa</span> do tesouro no castelo antigo.</p>
+                            </div>
+
+                            <div class="caixa2">
+
+                                <input type="text" class="inputPalavra" id="palavraInput" placeholder="Digite uma nova palavra">
+
+                                <button class="btnAlterar" onclick="trocar()" >Trocar Palavras <img class="imgButtonAlterar" src="assets/reload.png" alt=""></button>
+
+                            </div>
+
+                            <!-- <img src="assets/Donkey_Kong.png" class="donkey" alt=""> -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="group1GameContainer">
+
+                    </div>
+
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    <footer>
+
+
+        <div class="containerFooter">
+
+            <p class="textFooter">© 2025 Arcade11. Todos os direitos reservados.</p>
+            
+
+        </div>
+
+    </footer>
+
+    <script src="scripts/game1.js"></script>
+</body>
+</html>

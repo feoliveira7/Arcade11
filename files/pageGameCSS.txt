@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap');
+
+body, html {
+    margin: 0;
+    /* width: 100vw; */
+    
+    background: #17141C;
+    background: linear-gradient(180deg, rgba(23, 20, 28, 1) 17%, rgba(62, 55, 75, 1) 49%, rgba(62, 55, 75, 1) 57%, rgba(23, 20, 28, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* se quiser que o fundo fique fixo */
+    background-size: cover; /* ajusta o tamanho para cobrir */
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    /* background-color: rebeccapurple; */
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 100px;
+    background-color: #4E455E;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.logoHeader{
+    margin-left: 30px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Jersey 15';
+    cursor: pointer;
+}
+
+.rightBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soundButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #413A4D;
+    border: none;
+    border-radius: 7px;
+    /* border-right: 3px solid #B348E4;
+    border-bottom: 3px solid #B348E4; */
+    /* box-shadow: 
+    inset 3px 0 20px -5px #b348e46c, 
+    inset 0 3px 20px -5px #b348e46c;    */
+
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.soundButton:hover{
+    background-color: #403a49;
+}
+
+.iconSoundButton{
+    width: 25px;
+    height: 25px;
+}
+
+.searchHeader{
+    outline: none;
+    border: none;
+    height: 45px;
+    margin-right: 30px;
+    width: 320px;
+    border-radius: 8px;
+    background-color: #413A4D;
+    font-family: 'Jersey 15';
+    color: #d6cbe0;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.searchHeader::placeholder{
+    color: #9E84B4;
+    font-size: 26px;
+    font-family: 'Jersey 15';
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 800px;
+    background-color: #4E455E;
+    border-radius: 20px;
+    box-shadow: inset 0px -5px 20px #b348e4d7;
+}
+
+
+
+
+.groupsBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #9E84B4; */
+}
+
+.group1GameContainer{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.likeButton{
+    margin-top: 40px;
+    width: 40px;
+    opacity: 40%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.deslikeButton{
+    transform: rotate(180deg);
+    width: 40px;
+    opacity: 40%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.likeButton:hover{
+    opacity: 100%;
+}
+.deslikeButton:hover{
+    opacity: 100%;
+}
+
+.rates{
+    font-family: 'Jersey 10';
+    color: white;
+    font-size: 30px;
+}
+
+.group2GameContainer{
+    width: 1200px;
+    height: 650px;
+    background-color: rgb(255, 255, 255); 
+    margin-top: -20px;
+}
+
+.headContainerJogo {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.backButton:hover {
+    background-color: #2e2936;
+}
+
+.imgButtonBack{
+    width: 40px;
+}
+
+.gameName{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+    font-family: 'Jersey 15';
+    /* background-color: red; */
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+}
+
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    width: 98%;
+    height: 80px;
+    background-color: #4E455E;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px #b348e4d7;
+}
+
+.textFooter{
+    color: #DEC5F2;
+    font-size: 28px;
+    font-family: 'Jersey 15';
+}

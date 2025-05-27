@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="icon" href="assets/logo1.png">
+    <link rel="stylesheet" href="styles/game2.css">
+</head>
+<body onload="recomeca()">
+
+    <header>
+
+        <div class="containerHeader">
+
+            <p class="logoHeader">Arcade11</p>
+            
+            <div class="rightBox">
+                <!-- <button class="soundButton" onclick="switchSound()"><img id="iconSoundButton" class="iconSoundButton" src="assets/soundUp.png" alt=""></button> -->
+                <input type="text" class="searchHeader" placeholder="Pesquisar um jogo">
+            </div>
+            
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="containerMain">
+
+            <div class="gameContainer">
+
+                <div class="headContainerJogo">
+                    <button class="backButton" onclick="location.href='index.html'"><img class="imgButtonBack" src="assets/returnIcon.png" alt=""></button>
+                    <p class="gameName">Jogo da Velha</p>
+                </div>
+
+
+                <div class="groupsBox">
+                    <div class="group1GameContainer">
+
+                        <img src="assets/like.png" class="likeButton" alt="">
+                        <p class="rates">( 2.8k )</p>
+                        <img src="assets/like.png" class="deslikeButton" alt="">
+
+                    </div>
+
+                    <div class="group2GameContainer">
+
+                        <!-- <div class="animationJogo">
+                            <div class="fundoAnimation">
+                                <img src="assets/pac.gif" alt="" class="pacmanAnimation" id="pacmanAnimation">
+                                <img src="assets/ghost.gif" alt="" class="ghostAnimation" id="ghostAnimation">
+                                <p class="pointsAnimation">200</p>
+                            </div>
+                        </div> -->
+                        <div class="jogo" id="jogo">
+                            <div class="linha">
+                                <div class="casa" id="casa0" onclick="verifica(0)">
+                                    <img class="imgJogador" id="img0">
+                                </div>
+                                <div class="casa" id="casa1" onclick="verifica(1)">
+                                    <img class="imgJogador" src="" id="img1">
+                                </div>
+                                <div class="casa" id="casa2" onclick="verifica(2)">
+                                    <img class="imgJogador" src="" id="img2">
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="casa" id="casa3" onclick="verifica(3)">
+                                    <img class="imgJogador" src="" id="img3">
+                                </div>
+                                <div class="casa" id="casa4" onclick="verifica(4)">
+                                    <img class="imgJogador" src="" id="img4">
+                                </div>
+                                <div class="casa" id="casa5" onclick="verifica(5)">
+                                    <img class="imgJogador" src="" id="img5">
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="casa" id="casa6" onclick="verifica(6)">
+                                    <img class="imgJogador" src="" id="img6">
+                                </div>
+                                <div class="casa" id="casa7" onclick="verifica(7)">
+                                    <img class="imgJogador" src="" id="img7">
+                                </div>
+                                <div class="casa" id="casa8" onclick="verifica(8)">
+                                    <img class="imgJogador" src="" id="img8">
+                                </div>
+                            </div>
+                            <p class="vezJogador" id="vezJogador">VEZ DE: <img id="imgVez" class="imgResultados2" src="assets/ghost1.png" alt=""></p>
+                        </div>
+                        <div id="resultado">
+                            <p id="resposta">RESULTADO: </p>
+                            <br>
+                            <p id="xis" class="xis"><img class="imgResultados" src="assets/pacman.png" alt=""> Pontuação: 0</p>
+                            <p id="bola" class="bola"><img class="imgResultados" src="assets/ghost1.png" alt=""> Pontuação: 0</p>
+                            <p id="velha" class="velha">Empate: 0</p>
+                            <form>
+                                <input type="button" id="btnNovo" value="Novo Jogo" onclick="recomeca()">
+                            </form>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="group1GameContainer">
+
+                    </div>
+
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    <footer>
+
+
+        <div class="containerFooter">
+
+            <p class="textFooter">© 2025 Arcade11. Todos os direitos reservados.</p>
+            
+
+        </div>
+
+    </footer>
+    <script src="scripts/game2.js"></script>
+</body>
+</html>
