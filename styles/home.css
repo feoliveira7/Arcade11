@@ -446,6 +446,10 @@ footer{
     height: 100%;
 }
     
+#line2card{
+    margin-top: 0px;
+}
+    
 .containerHeader{
     display: flex;
     justify-content: space-between;
