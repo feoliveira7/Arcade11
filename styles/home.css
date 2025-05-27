@@ -409,6 +409,43 @@ footer{
     display: none;
 }
 
+.gameCard1{
+    width: 290px;
+    height: 200px;
+}
+.gameCard2{
+    width: 290px;
+    height: 200px;
+}
+.gameCard3{
+    width: 290px;
+    height: 200px;
+}
+.gameCard4{
+    width: 290px;
+    height: 200px;
+}
+
+.fundoCard1{
+    width: 100%;
+    height: 100%;
+}
+
+.fundoCard2{
+    width: 100%;
+    height: 100%;
+}
+
+.fundoCard3{
+    width: 100%;
+    height: 100%;
+}
+
+.fundoCard4{
+    width: 100%;
+    height: 100%;
+}
+    
 .containerHeader{
     display: flex;
     justify-content: space-between;
