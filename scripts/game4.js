@@ -180,7 +180,7 @@ function trocarPersonagem(novoPersonagem) {
             break;
         default:
             console.warn('Personagem não reconhecido:', novoPersonagem);
-            return;  // Não atualiza se inválido
+            return;  
     }
 
 }
