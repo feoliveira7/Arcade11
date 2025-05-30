@@ -98,3 +98,6 @@
 // }
 
 // window.onload = iniciarJogo;
+
+
+// DESATIVADOO
