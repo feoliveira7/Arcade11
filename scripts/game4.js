@@ -113,7 +113,7 @@ const iniciarJogo = () => {
     
 
     scoreInterval = setInterval(() => {
-        if (!isGameOver) {  // Só conta pontos se o jogo não estiver em game over
+        if (!isGameOver) {  jogo não estiver em game over
             document.getElementById('pontuacao').innerText = `PONTUAÇÃO: ${score}`;
             document.getElementById('ringsShow').innerText = `${coins}`;
             
