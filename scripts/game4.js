@@ -31,7 +31,7 @@ const jump = () => {
 };
 
 const gameover = () => {
-    isGameOver = true;  // Marca o estado como game over
+    isGameOver = true;  
     document.getElementById('gameoverContainer').style.display = 'flex';
     pipe.style.animation = 'none';
     pipe.style.left = `${pipe.offsetLeft}px`;
