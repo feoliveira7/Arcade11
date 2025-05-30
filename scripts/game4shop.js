@@ -22,7 +22,7 @@ function buyPersonagem(n) {
     }
 }
 
-// Função para equipar o personagem e desmarcar os outros
+
 function equipped(n) {
     for (let i = 1; i <= 6; i++) {
         if (personagemComprado[i - 1]) {
