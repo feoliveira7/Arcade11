@@ -1,4 +1,4 @@
-// Letras do teclado
+// letras
 const cLinha1 = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P']
 const cLinha2 = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ç']
 const cLinha3 = ['Z', 'X', 'C', 'V', 'B', 'N', 'M']
