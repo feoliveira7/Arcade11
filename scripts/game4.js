@@ -161,7 +161,7 @@ function trocarPersonagem(novoPersonagem) {
     
     switch (novoPersonagem) {
         case 'personagem1':
-            personagem.src = 'assets/sonicPersonagem.gif';  // Caminho para imagem do Mario
+            personagem.src = 'assets/sonicPersonagem.gif'; 
             break;
         case 'personagem2':
             personagem.src = 'assets/tailsPersonagem.gif';  // Caminho para imagem do Sonic
