@@ -1,4 +1,4 @@
-//Inicializa as casas com nove para sabermos que não foi clicado
+
 var casas = [9, 9, 9, 9, 9, 9, 9, 9, 9];
 
 
