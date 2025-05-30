@@ -6,7 +6,6 @@ let personagemComprado = [
 
 let valorPersonagem = [0, 100, 140, 170, 200, 250];
 
-
 function buyPersonagem(n) {
     if (personagemComprado[n - 1]) {
         equipped(n);
