@@ -54,7 +54,7 @@ const gameover = () => {
     score = 0;
 
     clearInterval(loop);  
-    clearInterval(scoreInterval);  // Para a contagem de pontuação
+    clearInterval(scoreInterval);  
 };
 
 const coletar = () => {
