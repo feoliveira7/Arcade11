@@ -1,6 +1,6 @@
 // Inicialização
 let personagemComprado = [
-    true, // personagem1 já vem comprado
+    true, 
     false, false, false, false, false
 ];
 
