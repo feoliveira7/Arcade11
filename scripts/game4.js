@@ -153,7 +153,7 @@ document.addEventListener('keydown', function(event) {
 });
 
 
-let personagemAtual = localStorage.getItem('personagemEquipado') || 'personagem1';  // Pega do localStorage ou usa 'mario'
+let personagemAtual = localStorage.getItem('personagemEquipado') || 'personagem1';  // Pega do localStor
 
 // Função para trocar personagem e salvar no localStorage
 function trocarPersonagem(novoPersonagem) {
