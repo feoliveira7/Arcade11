@@ -176,7 +176,7 @@ function trocarPersonagem(novoPersonagem) {
             personagem.src = 'assets/metalsonicPersonagem.gif';  // Caminho para imagem do Tails
             break;
         case 'personagem6':
-            personagem.src = 'assets/supersonicPersonagem.gif';  // Caminho para imagem do Tails
+            personagem.src = 'assets/supersonicPersonagem.gif';
             break;
         default:
             console.warn('Personagem não reconhecido:', novoPersonagem);
