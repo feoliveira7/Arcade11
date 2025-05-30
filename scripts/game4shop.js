@@ -32,7 +32,7 @@ function equipped(n) {
     localStorage.setItem('personagemEquipado', `personagem${n}`);
 }
 
-// Associando funções aos botões
+
 document.getElementById('buttonShop1').addEventListener('click', () => buyPersonagem(1));
 document.getElementById('buttonShop2').addEventListener('click', () => buyPersonagem(2));
 document.getElementById('buttonShop3').addEventListener('click', () => buyPersonagem(3));
