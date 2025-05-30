@@ -143,7 +143,7 @@ carregarPersonagem();
     mario.style.width = '150px'; 
     mario.style.marginLeft = '0'; 
 
-    iniciarJogo();  // Reinicia o jogo
+    iniciarJogo();  
 }
 
 document.addEventListener('keydown', function(event) {
