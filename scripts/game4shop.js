@@ -40,7 +40,7 @@ document.getElementById('buttonShop4').addEventListener('click', () => buyPerson
 document.getElementById('buttonShop5').addEventListener('click', () => buyPersonagem(5));
 document.getElementById('buttonShop6').addEventListener('click', () => buyPersonagem(6));
 
-// Restaura o personagem equipado ao carregar a página
+
 window.onload = function() {
     let equipado = localStorage.getItem('personagemEquipado');
     
