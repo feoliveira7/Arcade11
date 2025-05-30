@@ -1,6 +1,6 @@
 document.addEventListener('keydown', function(event) {
     if (event.code === 'Space') {
-        event.preventDefault(); // Evita scroll da página ao apertar espaço
+        event.preventDefault(); 
     }
 });
 
