@@ -13,7 +13,7 @@ let coins = 0;
 let coinsAtual = 0;
 
 let loop;  
-let scoreInterval;  // <- Controle do intervalo de pontuação
+let scoreInterval; 
 let isGameOver = false;  // <- Estado para verificar se o jogo está em game over
 
 
