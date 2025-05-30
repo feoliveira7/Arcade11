@@ -22,7 +22,7 @@ let isGameOver = false;
 
 
 const jump = () => {
-    if (!isGameOver) {  // Só permite pular se não estiver em game over
+    if (!isGameOver) {  
         mario.classList.add('jump');
         setTimeout(() => {
             mario.classList.remove('jump');
