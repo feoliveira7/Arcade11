@@ -1,4 +1,4 @@
-// Inicialização
+
 let personagemComprado = [
     true, 
     false, false, false, false, false
