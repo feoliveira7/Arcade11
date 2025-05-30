@@ -113,7 +113,7 @@ const iniciarJogo = () => {
     
 
     scoreInterval = setInterval(() => {
-        if (!isGameOver) {  jogo não estiver em game over
+        if (!isGameOver) {  
             document.getElementById('pontuacao').innerText = `PONTUAÇÃO: ${score}`;
             document.getElementById('ringsShow').innerText = `${coins}`;
             
