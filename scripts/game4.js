@@ -155,7 +155,7 @@ document.addEventListener('keydown', function(event) {
 
 let personagemAtual = localStorage.getItem('personagemEquipado') || 'personagem1';
 
-// Função para trocar personagem e salvar no localStorage
+// trocar personagem
 function trocarPersonagem(novoPersonagem) {
     const personagem = document.getElementById('personagemPrincipal');
     
