@@ -48,7 +48,7 @@ window.onload = function() {
         let num = parseInt(equipado.replace('personagem', ''));
         equipped(num);
     } else {
-        equipped(1); // Garante que o personagem 1 venha equipado por padrão
+        equipped(1); 
         localStorage.setItem('personagemEquipado', 'personagem1');
     }
 };
