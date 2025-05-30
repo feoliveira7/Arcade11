@@ -173,7 +173,7 @@ function trocarPersonagem(novoPersonagem) {
             personagem.src = 'assets/mightyPersonagem.gif'; 
             break;
         case 'personagem5':
-            personagem.src = 'assets/metalsonicPersonagem.gif';  // Caminho para imagem do Tails
+            personagem.src = 'assets/metalsonicPersonagem.gif';  
             break;
         case 'personagem6':
             personagem.src = 'assets/supersonicPersonagem.gif';
