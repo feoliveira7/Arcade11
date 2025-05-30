@@ -191,5 +191,5 @@ function carregarPersonagem() {
 }
 
 window.onload = function() {
-    localStorage.setItem('personagemEquipado', 'personagem1'); // Garante que o personagem 1 venha equipado por padrão
+    localStorage.setItem('personagemEquipado', 'personagem1');
 }
